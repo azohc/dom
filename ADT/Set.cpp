@@ -1,4 +1,5 @@
 #include "Set.h"
+/*      4      ------------------------------    dynamic array: resizeable      */
 
 template<class E>
 Set<E>::Set(int size)
@@ -78,4 +79,65 @@ bool Set<E>::contains(const E & e)
 	}
 	
 	return false;
+}
+
+template <class E>
+bool Set<E>::contains() const {
+	return _counter == 0;
+}
+
+template <class E>
+int Set<E>::cardinal() const {
+	int card = 0;
+
+	Set<E> aux = Set<E>();
+	for (int i = 0; i < _counter; i++) {
+		if (!aux.contains(_v[i])) {
+			aux.insert(_v[i]);
+			card++;
+		}
+	}
+	
+	return card;
+}
+
+template <class E>
+Set<E> Set<E>::unyon(const Set<E> &e) const {
+	Set<E> out = e.isect(e);
+	
+	for (int i = 0; i < _counter; i++)
+		if (!out.contains(_v[i]))
+			out.insert(_v[i]);
+	
+	return out;
+}
+
+template <class E>
+Set<E> Set<E>::isect(const Set<E> &e) const {
+	
+	Set<E> out = Set();
+
+	for (int i = 0; i < _counter; i++)
+		if (e.contains(_v[i]) && !out.contains(_v[i]))
+			out.insert(_v[i]);
+	
+	return out;
+}
+
+template <class E>
+Set<E> Set<E>::difer(const Set<E> &e) const {
+
+	Set<E> out = this->unyon(e);	//out = this u e
+	Set<E> aux = e.isect(e);		//aux = e sin reps
+
+	for (int i = 0; i < aux._counter; i++)
+		out.remove(aux._v[i]);		//borrar elems presentes en aux
+
+	return out;
+}
+
+template <class E>
+bool Set<E>::operator==(const Set<E> &e) const {
+
+	return this->isect(e).empty() && e.isect(this).empty();
 }
