@@ -115,11 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Hora.cpp" />
+    <ClCompile Include="Peli.cpp" />
     <ClCompile Include="Set.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Hora.h" />
+    <ClInclude Include="Peli.h" />
     <ClInclude Include="Set.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>

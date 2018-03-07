@@ -57,12 +57,24 @@ void Set<E>::insert(const E & e)
 template<class E>
 void Set<E>::remove(const E & e)
 {
-	_v[_counter] = NULL;
-	_counter--;
+	int i = 0;
+	bool found = false;
+
+	while(i < _counter && !found){
+		if (_v[i] == e)
+			found = true;
+		i++;
+	}
+	if (found) {
+		_v[i] = NULL;
+		_counter--;
+	}
+	else
+		throw "Element not found";
 }
 
 template<class E>
-bool Set<E>::contains(const E & e)
+bool Set<E>::contains(const E & e) const
 {
 	int l = 0, r = _counter, mid;		// binary search
 	while (l <= r)
@@ -79,11 +91,6 @@ bool Set<E>::contains(const E & e)
 	}
 	
 	return false;
-}
-
-template <class E>
-bool Set<E>::contains() const {
-	return _counter == 0;
 }
 
 template <class E>

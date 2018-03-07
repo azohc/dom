@@ -9,7 +9,7 @@ public:
 	void expand();
 	void insert(const E &e);
 	void remove(const E &e);
-	bool contains(const E &e);
+	bool contains(const E &e) const;
 	bool empty() const;
 	int cardinal() const;
 	Set<E> unyon(const Set<E> &e) const;//sin repet

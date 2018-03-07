@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Exception.h"
 using namespace std;
 
 class Hora{
@@ -10,9 +11,9 @@ public:
 
 	friend ostream &operator<<(ostream &o, const Hora &h);
 	friend istream &operator>>(istream &i, Hora &h);
-	bool operator<(const Hora &h);
-	bool operator==(const Hora&h);
-
+	bool operator<(const Hora &h) const;
+	bool operator==(const Hora&h) const;
+	Hora operator+(const Hora&h) const;
 
 
 private:

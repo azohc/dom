@@ -24,6 +24,12 @@
     <ClCompile Include="Stack.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Hora.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Peli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Set.h">
@@ -31,6 +37,15 @@
     </ClInclude>
     <ClInclude Include="Stack.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hora.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Peli.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
