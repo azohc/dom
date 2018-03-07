@@ -1,5 +1,4 @@
 #include "Set.h"
-/*      4      ------------------------------    dynamic array: resizeable      */
 
 template<class E>
 Set<E>::Set(int size)
