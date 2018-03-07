@@ -137,6 +137,12 @@ Set<E> Set<E>::difer(const Set<E> &e) const {
 }
 
 template <class E>
+bool Set<E>::empty() const {
+
+	return _counter == 0;
+}
+
+template <class E>
 bool Set<E>::operator==(const Set<E> &e) const {
 
 	return this->isect(e).empty() && e.isect(this).empty();
