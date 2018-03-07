@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <crtdbg.h>
 #include <string>
+#include <algorithm>
 #include "Set.cpp"
 #include "Stack.cpp"
 using namespace std;
@@ -83,3 +84,32 @@ int main()
 	return 0;
 }
 */
+
+
+
+	////Trenes y horarios
+	//int n, m;
+	//
+	//cin >> n >> m;		//n = numConsultas, m = numTrenes
+	//Hora*consultas = new Hora[n];
+	//Hora*trenes = new Hora[m];
+
+	//for (int i = 0; i < m; i++)
+	//	cin >> trenes[i];
+
+
+	//for (int i = 0; i < n; i++)
+	//	cin >> consultas[i];
+
+	//sort(consultas, consultas + n);
+	//int j = 1;
+
+	//for (int i = 0; i < n; i++)
+	//{
+	//	while (trenes[j - 1] < consultas[i] && j <= m)
+	//		j++;
+	//	if (j <= m)
+	//		cout << trenes[j - 1];
+	//	else
+	//		cout << "NO" << endl;
+	//}
