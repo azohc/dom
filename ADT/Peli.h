@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __PELI_
+#define __PELI_
 #include "Hora.h"
 #include <string>
 using namespace std;
@@ -41,3 +42,4 @@ public:
 	string _title;
 private:
 };
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __EXCEPTION_
+#define __EXCEPTION_
 #include <string>
 using namespace std;
 
@@ -19,3 +20,4 @@ public:
 	BadHour(const string &msg) : Exception(msg) {}
 
 };
+#endif
