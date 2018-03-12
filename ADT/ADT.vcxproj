@@ -116,7 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\ColaVIP.cpp" />
+    <ClCompile Include="ColaVIP.cpp" />
     <ClCompile Include="dupeQueue.cpp" />
     <ClCompile Include="Hora - Copy.cpp" />
     <ClCompile Include="invQueue.cpp" />
@@ -127,7 +127,7 @@
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\ColaVIP.h" />
+    <ClInclude Include="ColaVIP.h" />
     <ClInclude Include="Deque.h" />
     <ClInclude Include="dupeQueue.h" />
     <ClInclude Include="Exception.h" />

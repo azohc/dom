@@ -39,7 +39,7 @@
     <ClCompile Include="dupeQueue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\ColaVIP.cpp">
+    <ClCompile Include="ColaVIP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,7 +92,7 @@
     <ClInclude Include="dupeQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\ColaVIP.h">
+    <ClInclude Include="ColaVIP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
