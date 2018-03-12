@@ -116,20 +116,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dupeQueue.cpp" />
     <ClCompile Include="Hora - Copy.cpp" />
+    <ClCompile Include="invQueue.cpp" />
     <ClCompile Include="Set.cpp" />
     <ClCompile Include="ejsClase.cpp" />
-    <ClCompile Include="proximoTren_TD.cpp" />
+    <ClCompile Include="proximoTren.cpp" />
     <ClCompile Include="tardeDeSabado_TD.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Deque.h" />
+    <ClInclude Include="dupeQueue.h" />
     <ClInclude Include="Exception.h" />
+    <ClInclude Include="Exceptions.h" />
     <ClInclude Include="Hora - Copy.h" />
     <ClInclude Include="Hora.h" />
+    <ClInclude Include="invQueue.h" />
+    <ClInclude Include="LinkedListStack.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="ListaEnlazada.h" />
     <ClInclude Include="Peli.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Set.h" />
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="StaticStack.h" />
+    <ClInclude Include="VectorDinamico.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

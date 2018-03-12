@@ -35,7 +35,7 @@ public:
 		i.ignore();
 		i >> h._seg;
 
-		if (h._hr < 0 || h._hr > 99 ||
+		if (h._hr < 0 || h._hr > 23 ||
 			h._min < 0 || h._min > 59 ||
 			h._seg < 0 || h._seg > 59)
 			throw BadHour("Invalid hour input");
@@ -47,7 +47,7 @@ public:
 	bool operator<(const Hora &h) const
 	{
 
-		if (h._hr < 0 || h._hr > 99 ||
+		if (h._hr < 0 || h._hr > 23 ||
 			h._min < 0 || h._min > 59 ||
 			h._seg < 0 || h._seg > 59)
 			throw BadHour("Invalid hour input");
