@@ -23,6 +23,7 @@
     <ProjectGuid>{2A9F966D-E589-4434-BE83-3B4227430859}</ProjectGuid>
     <RootNamespace>ADT</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>domJudge</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
