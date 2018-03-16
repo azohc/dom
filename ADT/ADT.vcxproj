@@ -117,6 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ColaVIP.cpp" />
+    <ClCompile Include="dehesapilar.cpp" />
     <ClCompile Include="dupeQueue.cpp" />
     <ClCompile Include="Hora - Copy.cpp" />
     <ClCompile Include="invQueue.cpp" />
