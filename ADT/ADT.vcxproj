@@ -121,6 +121,7 @@
     <ClCompile Include="dupeQueue.cpp" />
     <ClCompile Include="Hora - Copy.cpp" />
     <ClCompile Include="invQueue.cpp" />
+    <ClCompile Include="mandelbrot.cpp" />
     <ClCompile Include="Set.cpp" />
     <ClCompile Include="ejsClase.cpp" />
     <ClCompile Include="proximoTren.cpp" />
@@ -129,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColaVIP.h" />
+    <ClInclude Include="Complex.h" />
     <ClInclude Include="Deque.h" />
     <ClInclude Include="dupeQueue.h" />
     <ClInclude Include="Exception.h" />

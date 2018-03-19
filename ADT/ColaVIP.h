@@ -1,20 +1,20 @@
 #ifndef _COLAVIP
 #define _COLAVIP
 
-#include <queue>
+#include "Queue.h"
 
 template <class T>
 class ColaVIP{
 public:
 
-    ColaVip<T> ColaVip(int p){
+    ColaVIP<T>(int p){
         _numPriorities = p;
-        _v = new queue<T>[_numPriorities];
+		_v = new Queue<T>[p];
     }
 
 
     void push(int p, const T &e){
-        _v[p].push(T);
+        _v[p].push_back(e);
     }
 
     T const &front() const{
@@ -29,6 +29,8 @@ public:
             else
                 return _v[i].front();
         }
+		
+		throw "Error";
     }
 
     void pop(){
@@ -38,7 +40,7 @@ public:
             if(_v[i].empty())
                 i++;
             else{
-                _v[i].pop();
+                _v[i].pop_front();
                 return;
             }
         }
@@ -69,7 +71,7 @@ public:
 
 private:
 
-    queue*_v;
+    Queue<T> *_v;
     int _numPriorities;	//number of priorities
 };
 #endif
