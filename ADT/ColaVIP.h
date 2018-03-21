@@ -1,7 +1,7 @@
 #ifndef _COLAVIP
 #define _COLAVIP
-
-#include "Queue.h"
+#include <cstddef>
+#include <queue>
 
 template <class T>
 class ColaVIP{
@@ -9,12 +9,12 @@ public:
 
     ColaVIP<T>(int p){
         _numPriorities = p;
-		_v = new Queue<T>[p];
+		_v = new std::queue<T>[p];
     }
 
 
     void push(int p, const T &e){
-        _v[p].push_back(e);
+        _v[p].push(e);
     }
 
     T const &front() const{
@@ -22,15 +22,15 @@ public:
             throw "No front of queue: it is empty";
 
         int i = 0;
-        while(i < _numPriorities)
-        {
-            if(_v[i].empty())
-                i++;
-            else
-                return _v[i].front();
-        }
-		
-		throw "Error";
+		while (i < _numPriorities)
+		{
+			if (_v[i].empty())
+				i++;
+			else
+				return _v[i].front();
+		}
+
+		throw "Fucked up";
     }
 
     void pop(){
@@ -40,7 +40,7 @@ public:
             if(_v[i].empty())
                 i++;
             else{
-                _v[i].pop_front();
+                _v[i].pop();
                 return;
             }
         }
@@ -60,7 +60,7 @@ public:
     }
 
     size_t size() const {
-        int size = 0;
+        size_t size = 0;
 
         for(int i = 0; i < _numPriorities; i++)
             size += _v[i].size();
@@ -71,7 +71,7 @@ public:
 
 private:
 
-    Queue<T> *_v;
+    std::queue<T> *_v;
     int _numPriorities;	//number of priorities
 };
 #endif

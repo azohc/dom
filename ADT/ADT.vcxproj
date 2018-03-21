@@ -123,6 +123,7 @@
     <ClCompile Include="Hora - Copy.cpp" />
     <ClCompile Include="invQueue.cpp" />
     <ClCompile Include="mandelbrot.cpp" />
+    <ClCompile Include="polinomio.cpp" />
     <ClCompile Include="Set.cpp" />
     <ClCompile Include="ejsClase.cpp" />
     <ClCompile Include="proximoTren.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="List.h" />
     <ClInclude Include="ListaEnlazada.h" />
     <ClInclude Include="Peli.h" />
+    <ClInclude Include="polinomio.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="Set.h" />
     <ClInclude Include="Stack.h" />
