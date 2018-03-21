@@ -6,7 +6,7 @@ using namespace std;
 void solveCase() {
 
 	int P, E, A;		//P = prioridades   E = llegadas/salidas	A = aforo
-	
+
 	cin >> P >> E >> A;
 
 	ColaVIP<int> cv = ColaVIP<int>(P);
@@ -16,7 +16,7 @@ void solveCase() {
 
 	for (int i = 0; i < E; ++i) {
 		cin >> sign;
-		
+
 		if (sign == '-') {
 			pplInside--;
 
@@ -50,7 +50,7 @@ int main() {
 
 	int n;
 	cin >> n;
-	
+
 	for (int i = 0; i < n; ++i)
 		solveCase();
 
