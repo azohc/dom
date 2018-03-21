@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="alumnoAfortunado.cpp" />
     <ClCompile Include="ColaVIP.cpp" />
     <ClCompile Include="dupeQueue.cpp" />
     <ClCompile Include="Hora - Copy.cpp" />

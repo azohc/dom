@@ -19,9 +19,7 @@ public:
 		_title = title;
 	}
 
-	//void setStart(const Hora &s);
-	//void setLen(const Hora &l);
-	//void setTitle(const string &t);
+	
 	
 	bool operator<(const Peli &p) const {
 		// A < B cuando el tiempo de finalización de A es < que B
