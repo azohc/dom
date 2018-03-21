@@ -153,6 +153,9 @@
     <ClInclude Include="StaticStack.h" />
     <ClInclude Include="VectorDinamico.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="sobresEntrada" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
