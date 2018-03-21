@@ -51,7 +51,13 @@
     <ClCompile Include="alumnoAfortunado.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="polinomio.cpp">
+    <ClCompile Include="listIteratorStuff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="polinomio_TD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sobres258.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -110,7 +116,7 @@
     <ClInclude Include="Complex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="polinomio.h">
+    <ClInclude Include="polinomio_TD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
