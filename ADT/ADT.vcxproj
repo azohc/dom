@@ -117,6 +117,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="alumnoAfortunado.cpp" />
+    <ClCompile Include="invStacksA.cpp" />
+    <ClCompile Include="invStacksB.cpp" />
     <ClCompile Include="sobres258.cpp" />
     <ClCompile Include="ColaVIP.cpp" />
     <ClCompile Include="dehesapilar.cpp" />
