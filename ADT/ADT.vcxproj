@@ -133,6 +133,7 @@
     <ClCompile Include="proximoTren.cpp" />
     <ClCompile Include="tardeDeSabado_TD.cpp" />
     <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="teclado144.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColaVIP.h" />
