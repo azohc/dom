@@ -19,28 +19,45 @@ void solveCase(int n, int k) {
 
 	while (i < k) {
 		cin >> aux;
-		sobres.push_back(pair <int, int>(aux, i++));
+
+		if(i == 0) 
+			sobres.push_back(pair <int, int>(aux, k + i++));
+		else {
+			if (!sobres.empty() && aux > sobres.back().first){
+				while(!sobres.empty() && aux > sobres.back().first)
+					sobres.pop_back();	
+				sobres.push_back(pair <int, int>(aux, k + i++));
+			}
+			else
+				sobres.push_back(pair <int, int>(aux, k + i++));
+		}
 	}
 
 	int displayed = 0;
-	do {
-		cin >> aux;
-
-		if (aux > sobres.front().first)
-			sobres.push_front(pair <int, int>(aux, i++));
+	while(displayed < N) {
+		
+		if(displayed == N - 1)
+			cout << sobres.front().first;
 		else
-			sobres.push_back(pair <int, int>(aux, i++));
-
-		if (sobres.size() == k - 1) {
 			cout << sobres.front().first << " ";
-			displayed++;
-		}
+		
+		displayed++;
 
 		if (i == sobres.front().second)
 			sobres.pop_front();
 
-	} while (displayed != N);
+		if (displayed != N) {
+			cin >> aux;
 
+			if (!sobres.empty() && aux > sobres.back().first){
+				while(!sobres.empty() && aux > sobres.back().first)
+					sobres.pop_back();	
+				sobres.push_back(pair <int, int>(aux, k + i++));
+			}
+			else
+				sobres.push_back(pair <int, int>(aux, k + i++));
+		} 
+	}
 }
 
 int main() {
@@ -48,8 +65,9 @@ int main() {
 	int n, k;
 	cin >> n >> k;
 
-	while (n != 0 || k != 0) {
+	while (n != 0) {
 		solveCase(n, k);
+		cout << endl;
 		cin >> n >> k;
 	}
 
