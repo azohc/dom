@@ -1,12 +1,14 @@
 ////#define _CRTDBG_MAP_ALLOC
 ////#include <stdlib.h>
 ////#include <crtdbg.h>
-//
 //#include <iostream>
 //#include <string>
 //#include <algorithm>
 //#include "Peli.h"
-//using namespace std;
+//using std::cin;
+//using std::cout;
+//using std::endl;
+//using std::string;
 //
 ////Una tarde de sabado: Cines y horas
 //void solveCase(int n) {
@@ -37,11 +39,11 @@
 //{
 //	//_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 //
-//	int n = -1;
-//	while (n != 0)
-//	{
-//		cin >> n;
+//	int n;
+//	cin >> n;
+//	while (n != 0) {
 //		solveCase(n);
+//		cin >> n;
 //	}
 //
 //	return 0;

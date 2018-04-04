@@ -1,7 +1,10 @@
-//#include "ColaVIP.h"
+//#include <queue>
 //#include <iostream>
 //#include <string>
-//using namespace std;
+//using std::cin;
+//using std::cout;
+//using std::endl;
+//using std::queue;
 //
 //void solveCase() {
 //
@@ -9,39 +12,57 @@
 //
 //	cin >> P >> E >> A;
 //
-//	ColaVIP<int> cv = ColaVIP<int>(P);
-//
+//	queue <int> *v = new queue <int>[P];
 //	char sign;
-//	int p, id, pplInside = 0;
-//
+//	int p, id, pplInside = 0, j = 0;
+//	bool isEmpty = true;
+//	
 //	for (int i = 0; i < E; ++i) {
 //		cin >> sign;
-//
 //		if (sign == '-') {
 //			pplInside--;
-//
-//			if (pplInside != A)	//si cabe alguien
-//				if(!cv.empty())		// y hay gente
-//					cv.pop();		//entra el mas famoso de la cola
+//			if (pplInside != A) {	//si cabe alguien
+//				isEmpty = true;
+//				j = 0;
+//				while (isEmpty && j < P) {
+//					if (!v[j].empty())
+//						isEmpty = false;	// y hay gente en alguna cola
+//					else
+//						j++;
+//				}
+//				if (!isEmpty) {
+//					pplInside++;
+//					v[j].pop();
+//				}
+//			}
 //		}
-//		else
-//		{
+//		else {
 //			cin >> p >> id;
-//
-//			if(pplInside == A)	//si la cantidad de gente dentro es = al alforo, a la puta cola
-//				cv.push(p, id);
+//			if (pplInside == A)	//si la cantidad de gente dentro es = al alforo, a la puta cola
+//				v[p].push(id);
 //			else
 //				pplInside++;
-//
 //		}
 //	}
 //
-//	if (cv.empty())
-//		cout << "NADIE";
+//	isEmpty = true;
+//	j = 0;
+//	while (isEmpty && j < P) {
+//		if (!v[j].empty())
+//			isEmpty = false;	// si hay gente en alguna cola
+//		else
+//			j++;
+//	}
+//	j = 0;
+//	if (isEmpty)
+//		cout << "NADIE";		
 //	else 
-//		while (cv.size() > 0) {
-//			cout << cv.front() << " ";
-//			cv.pop();
+//		while (j < P) {
+//			while (!v[j].empty()) {
+//				cout << v[j].front() << " ";
+//				v[j].pop();
+//			}
+//			j++;
 //		}
 //	
 //	cout << endl;
