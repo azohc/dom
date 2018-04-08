@@ -69,6 +69,9 @@
     <ClCompile Include="teclado144.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="scratch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Set.h">
@@ -126,6 +129,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="polinomio_TD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

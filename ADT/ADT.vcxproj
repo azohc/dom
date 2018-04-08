@@ -119,6 +119,7 @@
     <ClCompile Include="alumnoAfortunado.cpp" />
     <ClCompile Include="invStacksA.cpp" />
     <ClCompile Include="invStacksB.cpp" />
+    <ClCompile Include="scratch.cpp" />
     <ClCompile Include="sobres258.cpp" />
     <ClCompile Include="ColaVIP.cpp" />
     <ClCompile Include="dehesapilar.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="teclado144.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arbin.h" />
     <ClInclude Include="ColaVIP.h" />
     <ClInclude Include="Complex.h" />
     <ClInclude Include="Deque.h" />

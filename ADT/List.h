@@ -213,6 +213,10 @@ public:
 		return aux->_elem;
 	}
 
+	T operator[](unsigned int n) const {
+		return at(n);
+	}
+
 	/**
 	 Clase interna que implementa un iterador sobre
 	 la lista que permite recorrer la lista pero no
@@ -252,6 +256,8 @@ public:
 			operator++();
 			return ret;
 		}
+
+
 
 	protected:
 		// Para que pueda construir objetos del
