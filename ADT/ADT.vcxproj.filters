@@ -24,9 +24,6 @@
     <ClCompile Include="Stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tardeDeSabado_TD.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Hora - Copy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -69,7 +66,7 @@
     <ClCompile Include="teclado144.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="scratch.cpp">
+    <ClCompile Include="pelisHoras_ML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -129,9 +126,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="polinomio_TD.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Arbin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

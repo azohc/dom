@@ -132,7 +132,7 @@
     <ClCompile Include="Set.cpp" />
     <ClCompile Include="ejsClase.cpp" />
     <ClCompile Include="proximoTren.cpp" />
-    <ClCompile Include="tardeDeSabado_TD.cpp" />
+    <ClCompile Include="pelisHoras_ML.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="teclado144.cpp" />
   </ItemGroup>
