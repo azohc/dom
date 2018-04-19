@@ -69,6 +69,12 @@
     <ClCompile Include="pelisHoras_ML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="scratch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="singularNodes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Set.h">
@@ -128,8 +134,12 @@
     <ClInclude Include="polinomio_TD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Arbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="sobresEntrada" />
+    <None Include="singularNodes.pdf" />
   </ItemGroup>
 </Project>
