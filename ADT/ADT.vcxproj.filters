@@ -75,6 +75,12 @@
     <ClCompile Include="singularNodes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="alturaArbGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="200arbolFibo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Set.h">
@@ -135,6 +141,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Arbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

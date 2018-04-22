@@ -116,6 +116,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="200arbolFibo.cpp" />
+    <ClCompile Include="alturaArbGen.cpp" />
     <ClCompile Include="alumnoAfortunado.cpp" />
     <ClCompile Include="invStacksA.cpp" />
     <ClCompile Include="invStacksB.cpp" />
@@ -145,6 +147,7 @@
     <ClInclude Include="dupeQueue.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="genTree.h" />
     <ClInclude Include="Hora - Copy.h" />
     <ClInclude Include="Hora.h" />
     <ClInclude Include="invQueue.h" />
