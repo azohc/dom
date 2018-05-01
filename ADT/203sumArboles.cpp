@@ -1,9 +1,8 @@
 //#include <iostream>
-//
 //using std::cin;
 //using std::cout;
 //using std::endl;
-//using std::string;
+//using std::abs;
 //
 //#include <string>
 //#include <iosfwd>
@@ -1174,44 +1173,54 @@
 //};
 //
 //
+//Arbin<char> readTree() {
+//	char c;
+//	cin >> c;
+//	if (c == '.')
+//		return Arbin<char>();
+//	else if (c == '*')
+//		return Arbin<char>(c);
 //
-//// ^^^^^^^ codigo para usar arbins
-//Arbin<int> solveCase(int n) {
-//
-//	if (n == 0 || n == 1)
-//		return Arbin<int>(n);
-//
-//	Arbin<int> left = solveCase(n - 2);
-//	Arbin<int> right = solveCase(n - 1);
-//
-//	return Arbin<int>(left, left.raiz() + right.raiz(), right);
+//	Arbin<char> left = readTree();
+//	Arbin<char> right = readTree();
+//	
+//	return Arbin<char>(left, c, right);
 //}
 //
-//void printTree(Arbin <int> t, int tabs) {
+//bool adornado(Arbin<char> t, int &numAdornos) {
 //
-//	if (!t.esVacio())
-//	{
+//	if (t.esVacio())
+//		return true;
 //
-//		for (int i = 0; i < tabs; i++)
-//			cout << "   ";
-//		cout << t.raiz() << endl;
+//	int nLeft = 0;
+//	int nRight = 0;
 //
-//		printTree(t.hijoIz(), tabs + 1);
-//		printTree(t.hijoDr(), tabs + 1);
-//	}
+//	if (t.raiz() == '*')
+//		numAdornos++;
 //
+//	bool aLeft = adornado(t.hijoIz(), nLeft);
+//	bool aRight = adornado(t.hijoDr(), nRight);
+//
+//	numAdornos += nLeft + nRight;
+//	
+//	return aLeft && aRight && abs(nLeft - nRight) < 2;
+//}
+//
+//bool solveCase() {
+//
+//	char c;
+//	if (!(cin >> c))
+//		return false;
+//
+//	cin.putback(c);
+//	Arbin<char> t = readTree();
+//	int numAdornos = 0;
+//	adornado(t, numAdornos) ? cout << "OK" : cout << "KO";
+//	cout << endl;
+//	return true;
 //}
 //
 //int main() {
-//	
-//	int n;
-//
-//	cin >> n;
-//	while (n >= 0) {
-//		printTree(solveCase(n), 0);
-//		cout << "====" << endl;
-//		cin >> n;
-//	}
-//
+//	while (solveCase());
 //	return 0;
 //}

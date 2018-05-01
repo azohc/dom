@@ -117,6 +117,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="200arbolFibo.cpp" />
+    <ClCompile Include="201Natalidad.cpp" />
+    <ClCompile Include="203sumArboles.cpp" />
+    <ClCompile Include="215deReconstruccion.cpp" />
     <ClCompile Include="alturaArbGen.cpp" />
     <ClCompile Include="alumnoAfortunado.cpp" />
     <ClCompile Include="invStacksA.cpp" />

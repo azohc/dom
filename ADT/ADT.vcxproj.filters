@@ -81,6 +81,15 @@
     <ClCompile Include="200arbolFibo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="201Natalidad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="203sumArboles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="215deReconstruccion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Set.h">

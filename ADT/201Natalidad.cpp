@@ -1174,43 +1174,49 @@
 //};
 //
 //
+//Arbin<char> readTree(bool &one, bool &two) {
+//	char c;
+//	cin >> c;
+//	if (c == '.')
+//		return Arbin<char>();
 //
-//// ^^^^^^^ codigo para usar arbins
-//Arbin<int> solveCase(int n) {
+//	Arbin<char> l = readTree(one, two);
+//	Arbin<char> r = readTree(one, two);
 //
-//	if (n == 0 || n == 1)
-//		return Arbin<int>(n);
+//	if (!l.esVacio() && !r.esVacio())	//si tiene mas de un hijo == si tiene dos hijos  
+//		one = false;
+//	
+//	if (!l.esVacio() || !r.esVacio())		//si tiene algun hijo
+//		if (l.esVacio() || r.esVacio())	//y uno de los dos es vacio -> no tiene dos hijos
+//			two = false;
 //
-//	Arbin<int> left = solveCase(n - 2);
-//	Arbin<int> right = solveCase(n - 1);
-//
-//	return Arbin<int>(left, left.raiz() + right.raiz(), right);
+//	return Arbin<char>(l, c, r);
 //}
 //
-//void printTree(Arbin <int> t, int tabs) {
+//void solveCase(char c) {
+//	
+//	cin.putback(c);
+//	bool one = true, two = true;
+//	readTree(one, two);
+//	
+//	if (one)
+//		cout << "1";
+//	if (two)
+//		cout << "2";
+//	else if (!one && !two)
+//		cout << "N";	
 //
-//	if (!t.esVacio())
-//	{
-//
-//		for (int i = 0; i < tabs; i++)
-//			cout << "   ";
-//		cout << t.raiz() << endl;
-//
-//		printTree(t.hijoIz(), tabs + 1);
-//		printTree(t.hijoDr(), tabs + 1);
-//	}
-//
+//	cout << endl;
 //}
 //
 //int main() {
-//	
-//	int n;
 //
-//	cin >> n;
-//	while (n >= 0) {
-//		printTree(solveCase(n), 0);
-//		cout << "====" << endl;
-//		cin >> n;
+//	char c;
+//	cin >> c;
+//
+//	while (c != '.') {
+//		solveCase(c);
+//		cin >> c;
 //	}
 //
 //	return 0;
